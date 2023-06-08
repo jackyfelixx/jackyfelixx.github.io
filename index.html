@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Jacky</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="JFicon.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
 </head>
@@ -53,21 +53,19 @@
             }
             nav {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 background-color: #0D1218;
                 position: fixed;
                 width: 100%;
                 z-index: 50;
-
             }
             nav .nav-menu {
-                margin-left: 112px;
+                margin-left: 460px;
                 margin-right: 112px;
             }
             a{
                 color: #FAFAFA;
                 text-decoration: none;
-                display: flex;
             }
         </style>
     </header>
@@ -99,7 +97,7 @@
                 }
                 .home-container {
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: center;
                     margin-top: 112px;
                 }
                 .home-left {
@@ -118,7 +116,7 @@
                     max-width: 400px;
                     height: 4px;
                     background-color: rgba(84, 84, 108, 1);
-                    z-index: 100;
+                    z-index: 0;
                     margin-top: -42px;
                 }
                 .home-left h5 {
@@ -159,7 +157,9 @@
                         <div class="details-image">
                             <img src="DigitalMarketing_Pict.png">
                         </div>
-                        <h5>Digital Marketing</h5>
+                        <div class="details-desc">
+                            <p>Digital Marketing</p>
+                        </div>
                     </div>
                 </div>
                 <div class="details">
@@ -167,7 +167,9 @@
                         <div class="details-image">
                             <img src="ContentMarketing_Pict.png">
                         </div>
-                        <h5>Content Marketing</h5>
+                        <div class="details-desc">
+                            <p>Content Marketing</p>
+                        </div>
                     </div>
                 </div>
                 <div class="details">
@@ -175,7 +177,9 @@
                         <div class="details-image">
                             <img src="ContentCreation_Pict.png">
                         </div>
-                        <h5>Content Creation</h5>
+                        <div class="details-desc">
+                            <p>Content Creation</p>
+                        </div>
                     </div>
                 </div>
                 <div class="details">
@@ -183,7 +187,9 @@
                         <div class="details-image">
                             <img src="GraphicDesign_Pict.png">
                         </div>
-                        <h5>Graphic Design</h5>
+                        <div class="details-desc">
+                            <p>Graphic<br>Design</p>
+                        </div>
                     </div>
                 </div>
                 <div class="details">
@@ -191,7 +197,9 @@
                         <div class="details-image">
                             <img src="Copywriting_Pict.png">
                         </div>
-                        <h5>Copywriting</h5>
+                        <div class="details-desc">
+                            <p>Copywriting</p>
+                        </div>
                     </div>
                 </div>
                 <div class="details">
@@ -199,7 +207,9 @@
                         <div class="details-image">
                             <img src="SocialMedia_Pict.png">
                         </div>
-                        <h5>Social Media</h5>
+                        <div class="details-desc">
+                            <p>Social Media</p>
+                        </div>                        
                     </div>
                 </div>
                 <div class="details">
@@ -207,7 +217,9 @@
                         <div class="details-image">
                             <img src="UIUX_Pict.png">
                         </div>
-                        <h5>UI/UX</h5>
+                        <div class="details-desc">
+                            <p>UI/UX</p>
+                        </div>
                     </div>
                 </div>
                 <div class="details">
@@ -215,7 +227,9 @@
                         <div class="details-image">
                             <img src="Editing_Pict.png">
                         </div>
-                        <h5>Editing</h5>
+                        <div class="details-desc">
+                            <p>Editing</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -225,18 +239,18 @@
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
+                justify-content: center;
+                padding-top: 60px;
+                width: 100%;
+            }
+            .services-container {
                 margin-left: 112px;
                 margin-right: 112px;
-                padding-top: 60px;
+                justify-content: center;
             }
             .services-title {
                 display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                max-width: 800px;
-                flex: none;
-                order: 0;
-                flex-grow: 0;
+                flex-direction: column; 
             }
             .services-title h4 {
                 font-size: 48px;
@@ -252,20 +266,22 @@
             .services-details {
                 display: flex;
                 flex-wrap: wrap;
-                flex: none;
-                order: 1;
-                flex-grow: 0;
                 align-items: center;
+                justify-content: center;
             }
             .details-square {    
                 width: 280px;
                 height: 280px;
-                margin-bottom: 48px;
+                margin-bottom: 32px;
                 background: #1B222B;
                 box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.79);
                 border-radius: 12px;
                 justify-content: center;
                 align-items: center;
+            }
+            .details-square > * {
+                flex-shrink: 0;
+                width: 100%;
             }
             .details-square img {
                 margin-top: 5%;
@@ -277,14 +293,21 @@
             }
             .details {
                 flex-grow: 1;
+                flex-shrink: 1;
             }
-            .details-square h5 {
+            .details-desc {
                 font-size: 32px;
                 font-weight: 700;
-                display: flex;
-
-                align-items: center;
-                padding: 0px 20%;
+                justify-content: center;
+                text-align: center;
+                line-height: 40px;
+            }
+            @media (min-width: 1441px){
+                .services {
+                    flex-wrap: wrap;
+                    display: flex;
+                    flex-direction: row;
+                }
             }
         </style>
     </section>
@@ -307,27 +330,27 @@
                     <div class="contact">
                         <div class="contact-line">
                             <div class="contact-line-image">
-                                <img src="Instagram_Icon.png">
+                                <a href="https://instagram.com/jackyfelixx"><img src="Instagram_Icon.png">
                             </div>
-                            <h5>jackyfelix_</h5><br>
+                            <a href="https://instagram.com/jackyfelixx"><h5>jackyfelix_</h5></a><br>
                         </div>
                         <div class="contact-line">
                             <div class="contact-line-image">
-                                <img src="Email_Icon.png">
+                                <a href="mailto:jacky.star2015.jacky@gmail.com"><img src="Email_Icon.png"></a>
                             </div>
-                            <h5>jacky.star2015.jacky@gmail.com</h5><br>
+                            <a href="mailto:jacky.star2015.jacky@gmail.com"><h5>jacky.star2015.jacky@gmail.com</h5></a><br>
                         </div>
                         <div class="contact-line">
                             <div class="contact-line-image">
-                                <img src="Phone_Icon.png">
+                                <a href="https://wa.me/089669378723"><img src="Phone_Icon.png"></a>
                             </div>
-                            <h5>089669378723</h5><br>
+                            <a href="https://wa.me/089669378723"><h5>089669378723</h5></a><br>
                         </div>
                         <div class="contact-line">
                             <div class="contact-line-image">
-                                <img src="LinkedIn_Icon.png">
+                                <a href="https://www.linkedin.com/in/jacky-felix-51a4a719b/"><img src="LinkedIn_Icon.png"></a>
                             </div>
-                            <h5>jacky felix</h5><br>
+                            <a href="https://www.linkedin.com/in/jacky-felix-51a4a719b/"><h5>jacky felix</h5></a><br>
                         </div>
                     </div>    
                 </div>
@@ -338,14 +361,16 @@
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
-                margin-left: 112px;
-                margin-right: 112px;
                 padding-top: 60px;
+                margin-top: 60px;
             }
             .about-top-container {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: center;
+                margin-left: 112px;
+                margin-right: 112px;
+                flex-grow: 1;
             }
             .about-top-left {
                 display: flex;
@@ -354,6 +379,7 @@
             }
             .about-top-right {
                 display: flex;
+                margin-right: 112px;
                 margin-left: 133px;
             }
             .about-top-right-details h2{
@@ -425,9 +451,7 @@
                         </div>
                         <div class="prof-skills-image">
                             <img src="PremierePro.png" alt="">
-                        </div>
-                    </div>
-                    <div class="prof-skills1">
+                        </div>               
                         <div class="prof-skills-image">
                             <img src="Office.png" alt="">
                         </div>
@@ -472,7 +496,7 @@
             }
             .about-bottom-container {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
             }
             .about-bottom-container h4{
                 font-size: 32px;
@@ -508,6 +532,7 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
+                flex-shrink: 1;
                 align-items: center;
             }
             .prof-skills-image img {
@@ -525,6 +550,13 @@
                 font-weight: 500;
                 line-height: 30px;
             }
+            .about-bottom-middle {
+                margin-left: 32px;
+            }
+            .about-bottom-right {
+                margin-left: 32px;
+                margin-left: 32px;
+            }
         </style>
     </section>
 
@@ -536,9 +568,13 @@
                     <ul class="slider-container">
                         <li><img src="feeds_ptpapasari.png" style="max-width: 100%;height: auto;"></li>
                         <li><img src="feeds_sp12mia1.png" style="max-width: 100%;height: auto;"></li>
-                        <li><img src="illustrator-proj.png" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="illustrator1.png" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="Illustrator2.png" style="max-width: 100%;height: auto;"></li>
                         <li><img src="youtube-port.png" style="max-width: 100%;height: auto;"></li>
-                        <li><img src="uiux.png" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="uiux1.png" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="uiux2.png" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="uiux3.png" style="max-width: 100%;height: auto;"></li>
+                        <li><img src="uiux4.png" style="max-width: 100%;height: auto;"></li>
                         <li><img src="Front.png" style="max-width: 100%;height: auto;"></li>
                         <li><img src="Back.png" style="max-width: 100%;height: auto;"></li>
                     </ul>
@@ -554,12 +590,23 @@
                         <button></button>
                         <button></button>
                         <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
                     </div>
                 </div>
             </div>
         </div>
         <style>
             .projects {
+                display: flex;
+                justify-content: center;   
+            }
+            .projects-container {
+                width: 100%;
+                margin-left: 112px;
+                margin-right: 112px;
                 justify-content: center;
             }
             .projects-carousel {
@@ -600,11 +647,11 @@
                 </form>
             </div>
             <div class="contact-footer">
-                <div class="footer-image"><a href=""><img src="whatsapp.png" alt=""></a></div>
-                <div class="footer-image"><a href=""><img src="instagram.png" alt=""></a></div>
-                <div class="footer-image"><a href=""><img src="Youtube.png" alt=""></a></div>
-                <div class="footer-image"><a href=""><img src="GitHub.png" alt=""></a></div>
-                <div class="footer-image"><a href=""><img src="LinkedIn.png" alt=""></a></div>
+                <div class="footer-image"><a href="https://wa.me/089669378723" target="_blank"><img src="whatsapp.png" alt=""></a></div>
+                <div class="footer-image"><a href="https://instagram.com/jackyfelixx" target="_blank"><img src="instagram.png" alt=""></a></div>
+                <div class="footer-image"><a href="https://www.youtube.com/@EXPiredid" target="_blank"><img src="Youtube.png" alt=""></a></div>
+                <div class="footer-image"><a href="https://github.com/jackyfelixx" target="_blank"><img src="GitHub.png" alt=""></a></div>
+                <div class="footer-image"><a href="https://www.linkedin.com/in/jacky-felix-51a4a719b/" target="_blank"><img src="LinkedIn.png" alt=""></a></div>
             </div>
         </div>
         <style>
@@ -615,19 +662,21 @@
             }
             .contact-container {
                 display: block;
-                margin-left: 288px;
-                margin-right: 288px;
+                margin-left: 112px;
+                margin-right: 112px;
                 padding-top: 60px;
+                width: 100%;
             }
             .contact-container h2{
                 font-size: 72px;
                 font-weight: 700;
-                margin-bottom: -64px;
+                margin-bottom: -32px;
             }
             .contact-container h6 {
                 font-size: 24px;
                 font-weight: 500;
-                width: 100%;
+                margin-left: 112px;
+                margin-right: 112px;
             }
             .contact-form {
                 display: flex;
@@ -635,6 +684,8 @@
                 align-items: center;
                 padding: 0px;
                 gap: 16px;
+                margin-left: 140px;
+                margin-right: 140px;
             }
             .contact-form input {
                 background: rgba(255, 255, 255, 0.5);
@@ -645,6 +696,7 @@
                 font-size: 24px;
                 font-weight: 500;
                 padding: 8px 16px;
+                justify-content: center;
             }
             .contact-form textarea {
                 background: rgba(255, 255, 255, 0.5);
@@ -654,6 +706,7 @@
                 margin-bottom: 16px;
                 padding: 8px 16px;
                 font-size: 24px;
+                justify-content: center;
             }
             .contact-form ::placeholder {
                 color: #FAFAFA;
@@ -685,7 +738,8 @@
             }
             .footer-image {
                 display: flex;
-                margin-right: 16px;
+                margin-left: 8px;
+                margin-right: 8px;
             }
         </style>
     </section>
