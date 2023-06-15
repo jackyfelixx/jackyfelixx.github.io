@@ -255,9 +255,8 @@ nav a:hover {
 }
 .about-bottom-right-image img {
     max-width: 100%; 
-    width: 300px;
     margin-top: 80px;
-    margin-right: 112px;
+    margin-right: 200px;
 }
 .prof-skills1 {
     display: flex;
