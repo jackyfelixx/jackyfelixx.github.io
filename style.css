@@ -10,6 +10,19 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
+
+header {
+    display: flex;
+    justify-content: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0D1218;
+    position: fixed;
+    max-width: 100%;
+    z-index: 50;
+}
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -24,15 +37,7 @@ nav .nav-left{
     font-size: 24px;
     font-weight: 600;
     margin-left: 112px;
-    margin-right: 460px;
-}
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #0D1218;
-    position: fixed;
-    width: 100%;
-    z-index: 50;
+    margin-right: 455px;
 }
 nav .nav-menu {
     margin-right: 112px;
@@ -44,11 +49,11 @@ a{
 nav a:hover {
     color: #A7ECEE;
 }
+
 .home {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 947px;
     margin-left: 112px;
     margin-right: 112px;
 }
@@ -60,8 +65,6 @@ nav a:hover {
 .home-left {
     display: flex;
     flex-direction: column;
-    left: 112px;
-    top: 272px;
     max-width: 650px;
 }
 .home-left h1 {
@@ -91,22 +94,20 @@ nav a:hover {
     z-index: 25;
     max-width: 140px;
 }
-.home-right-image {
-    max-width: 641px;
-    max-height: 835px;
-    right: 112px;
-    display: flex;
+.home-right-image img{
+    max-width: 100%;
 }
+
 .services {
     justify-content: center;
     padding-top: 60px;
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .services-container {
+    justify-content: center;
     margin-left: 112px;
     margin-right: 112px;
-    justify-content: center;
 }
 .services-title {
     display: flex;
@@ -127,8 +128,6 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
 }
 .details-square {    
     width: 280px;
@@ -140,10 +139,6 @@ nav a:hover {
     justify-content: center;
     align-items: center;
 }
-.details-square > * {
-    flex-shrink: 1;
-    width: 100%;
-}
 .details-square img {
     margin-top: 5%;
     margin-left: 20%;
@@ -154,7 +149,6 @@ nav a:hover {
 }
 .details {
     flex-grow: 1;
-    flex-shrink: 1;
 }
 .details-desc {
     font-size: 32px;
@@ -166,6 +160,7 @@ nav a:hover {
 .about-top{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding-top: 60px;
     margin-top: 60px;
 }
@@ -182,10 +177,12 @@ nav a:hover {
     height: 533px;
     margin-left: 100px;
 }
+.about-top-left-image img{
+    max-width: 100%;
+}
 .about-top-right {
     display: flex;
-    margin-right: 112px;
-    margin-left: 133px;
+    margin-left: 80px;
 }
 .about-top-right-details h2{
     font-size: 72px;
@@ -217,6 +214,7 @@ nav a:hover {
 .about-bottom {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
     padding-top: 140px;
     width: 100%;
@@ -250,10 +248,10 @@ nav a:hover {
     margin-bottom: 0px;
 }
 .about-bottom-right-image img {
-    height: 100%;
+    max-width: 100%; 
     width: 300px;
-    scale: 1.15;
     margin-top: 80px;
+    margin-right: 112px;
 }
 .prof-skills1 {
     display: flex;
@@ -263,8 +261,7 @@ nav a:hover {
     align-items: center;
 }
 .prof-skills-image img {
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
 }
 .soft-skills-cont {
     display: flex;
@@ -272,20 +269,19 @@ nav a:hover {
 }
 .soft-skills1 p {
     padding-right: 40px;
-    margin-bottom: -16px;
+    margin-bottom: -8px;
     font-size: 18px;
     font-weight: 500;
-    line-height: 30px;
 }
 .about-bottom-left {
     margin-right: 32px;
+    margin-left: 112px;
 }
-.about-bottom-middle {
-    margin-right: 32px;
-}
+
 .projects {
     display: flex;
-    justify-content: center;   
+    justify-content: center;  
+    justify-content: center; 
 }
 .projects-container {
     width: 100%;
