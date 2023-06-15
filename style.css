@@ -10,7 +10,7 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
-
+/*Navigation*/
 header {
     display: flex;
     justify-content: center;
@@ -50,6 +50,7 @@ nav a:hover {
     color: #A7ECEE;
 }
 
+/*Home Section*/
 .home {
     display: flex;
     flex-direction: column;
@@ -98,6 +99,7 @@ nav a:hover {
     max-width: 100%;
 }
 
+/*Services Section*/
 .services {
     justify-content: center;
     padding-top: 60px;
@@ -157,6 +159,8 @@ nav a:hover {
     text-align: center;
     line-height: 40px;
 }
+
+/*About Top - Profile Section*/
 .about-top{
     display: flex;
     flex-direction: column;
@@ -211,6 +215,8 @@ nav a:hover {
 .contact-line h5{
     margin-left: 16px;
 }
+
+/*About Bottom - Skills Section*/
 .about-bottom {
     display: flex;
     flex-direction: column;
@@ -278,6 +284,7 @@ nav a:hover {
     margin-left: 112px;
 }
 
+/*Portofolio Projects Section*/
 .projects {
     display: flex;
     justify-content: center;  
@@ -305,6 +312,8 @@ nav a:hover {
     font-weight: 700;
     line-height: 87px;
 }
+
+/*Form Contact Section*/
 .contact-bottom {
     display: flex;
     justify-content: center;
@@ -350,7 +359,6 @@ nav a:hover {
     color: #FAFAFA;
     font-family: 'Poppins';
 }
-
 .contact-form textarea {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 0px;  
@@ -396,6 +404,8 @@ nav a:hover {
                 0 0 30px rgb(0,140,25),
                 0 0 50px rgb(0,140,25);
 }
+
+/*Social Media Icon Section*/
 .contact-footer {
     display: flex;
     justify-content: center;
